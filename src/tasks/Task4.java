@@ -36,8 +36,8 @@ public class Task4 {
         if (hours > 12) {
             hours -= 12;
         }
-        minDegree = minutes * 360 / 60;
-        hoursDegree = hours * 30 + (minutes * 30 / 60);
+        minDegree = minutes * (360 / 60);
+        hoursDegree = hours * (360 / 12);
         diff = Math.abs(hoursDegree - minDegree);
         return (int) diff;
     }
